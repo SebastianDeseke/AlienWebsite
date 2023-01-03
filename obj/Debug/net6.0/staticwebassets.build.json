@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xFvGISfr5aOS574BzhEy057u1MuHrSY3vz5NVbgb4Gw=",
+  "Hash": "WW65tNCQgdLRJazn3+2KUKgre4FXPaOj/aVv0XzgfwU=",
   "Source": "SebsFirstWebapp",
   "BasePath": "_content/SebsFirstWebapp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Sebastian\\OneDrive - Codelogic\\Documents\\Visual Studio directory\\SebsFirstWebapp\\wwwroot\\Images\\Alien_Meme.jpg",
+      "SourceId": "SebsFirstWebapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sebastian\\OneDrive - Codelogic\\Documents\\Visual Studio directory\\SebsFirstWebapp\\wwwroot\\",
+      "BasePath": "_content/SebsFirstWebapp",
+      "RelativePath": "Images/Alien_Meme.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Alien_Meme.jpg"
     },
     {
       "Identity": "C:\\Users\\Sebastian\\OneDrive - Codelogic\\Documents\\Visual Studio directory\\SebsFirstWebapp\\wwwroot\\js\\site.js",
