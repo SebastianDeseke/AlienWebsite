@@ -11,7 +11,7 @@
   <img src="Images\Alien_Meme.jpg" class="card-img-top" alt="failed to load">
   <div class="card-body">
     <h5 class="card-title">@Model.Name</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. @Model.WackyName</p>
     <a href="#" class="btn btn-success">Go somewhere</a>
   </div>
 </div>
@@ -31,4 +31,18 @@
 
 <br/><br/><br/>
 
-<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-info">Generate Human Name</button>
+
+<br/><br/>
+
+<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, @Model.Name!
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+
+
+

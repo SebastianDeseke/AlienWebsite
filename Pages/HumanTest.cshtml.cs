@@ -7,15 +7,19 @@ public class HumanTestModel : PageModel
 {
     public int Age { get; set; }
 
-public string  Name { get; set; }
+    public string? Name { get; set; }
 
-NameGenerator newName = new Services.NameGenerator ();
+    public string? WackyName { get; set; }
+
+    NameGenerator newName = new Services.NameGenerator();
 
 
-public void OnGet () {
-    
-    Name = newName.GenerateName();
-}
+    public void OnGet()
+    {
+
+        Name = newName.GenerateName();
+        WackyName = newName.WackyNameGenerator();
+    }
 
 }
 

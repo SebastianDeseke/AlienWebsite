@@ -12,7 +12,7 @@ public class IndexModel : PageModel
     public string Time { get; set; }
     private readonly ILogger<IndexModel> _logger;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public IndexModel (ILogger<IndexModel> logger)
     {
         _logger = logger;
     }
