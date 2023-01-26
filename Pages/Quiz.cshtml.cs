@@ -4,7 +4,7 @@ using SebsFirstWebapp.Services;
 
 namespace SebsFirstWebapp.Pages;
 
-public class HumanTestModel : PageModel
+public class QuizModel : PageModel
 {
     public int Age { get; set; }
 
@@ -17,11 +17,19 @@ public class HumanTestModel : PageModel
 
     public void OnGet()
     {
-
         Name = newName.GenerateName();
         WackyName = newName.WackyNameGenerator();
     }
 
+    public IActionResult OnPost()
+    {
+        if (Request.Form["answer"].ToString() == Request.Form["correctAnswer"].ToString())
+        {
+            return RedirectToPage("Quiz");
+        }
+
+        return Page();
+    }
 
 }
 

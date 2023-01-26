@@ -15,10 +15,11 @@ public class NameGenerator
 
     public string WackyNameGenerator()
     {
-        int arrlengf = rnd.Next(3,11);
-        int arrlengs = rnd.Next(3,17);
+        int arrlengf = rnd.Next(3, 11);
+        int arrlengs = rnd.Next(3, 17);
         char[] frontname = new char[arrlengf];
         char[] surname = new char[arrlengs];
+        char[] vowels = new char[] { 'a', 'o', 'e', 'i', 'u' };
         for (int i = 0; i < arrlengf; i++)
         {
             if (i == 0)
@@ -27,7 +28,17 @@ public class NameGenerator
             }
             else
             {
-                frontname[i] = (char)rnd.Next(97, 123);
+                double probability = rnd.NextDouble();
+                if (probability < 0.4)
+                {
+                    // Select a vowel with 40% probability
+                    frontname[i] = vowels[rnd.Next(0, vowels.Length)];
+                }
+                else
+                {
+                    frontname[i] = (char)rnd.Next(97, 123);
+                }
+
             }
         }
 
@@ -39,7 +50,16 @@ public class NameGenerator
             }
             else
             {
-                surname[i] = (char)rnd.Next(97, 123);
+                double probability = rnd.NextDouble();
+                if (probability < 0.4)
+                {
+                    surname[i] = vowels[rnd.Next(0, vowels.Length)];
+                }
+                else
+                {
+                    surname[i] = (char)rnd.Next(97, 123);
+                }
+
             }
         }
         return "Your name is " + string.Join("", frontname) + " " + string.Join("", surname);
