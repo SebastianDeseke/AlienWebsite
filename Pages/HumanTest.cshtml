@@ -70,13 +70,13 @@
 <h4>Anwser this question correctly to enter into out Quiz</h4>
 <p>What would be the appropriate respones to the following question: "Yo man, waddup?"</p>
 
-<form method="post" action="/Quiz">
+<form method="post" asp-page-handler="/Quiz">
     <input type="hidden" name="correctAnswer" value="Yes, Carbon-14 is considered an unstable isotope, wich is why it is used for Radio carbon Dating" />
-    <button type="submit" name="answer" value="Yes, my name is @Model.WackyName" class="btn btn-primary">Yes, my name is @Model.WackyName</button>
+    <button type="submit" name="answer1" value="Yes, my name is @Model.WackyName" class="btn btn-primary">Yes, my name is @Model.WackyName</button>
     <br /><br />
-    <button type="submit" name="answer" value="No, I like my coffee cold and with a metric fuckton of sugar" class="btn btn-primary">No, I like my coffee cold and with a metric fuckton of sugar</button>
+    <button type="submit" name="answer2" value="No, I like my coffee cold and with a metric fuckton of sugar" class="btn btn-primary">No, I like my coffee cold and with a metric fuckton of sugar</button>
     <br /><br />
-    <button type="submit" name="answer" value="Yes, Carbon-14 is considered an unstable isotope, wich is why it is used for Radio carbon Dating" class="btn btn-primary">Yes, Carbon-14 is considered an unstable isotope, wich is why it is used for Radio carbon Dating</button>
+    <button type="submit" name="answer3" value="Yes, Carbon-14 is considered an unstable isotope, wich is why it is used for Radio carbon Dating" class="btn btn-primary">Yes, Carbon-14 is considered an unstable isotope, wich is why it is used for Radio carbon Dating</button>
 </form>
 
 

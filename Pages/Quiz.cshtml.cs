@@ -6,29 +6,34 @@ namespace SebsFirstWebapp.Pages;
 
 public class QuizModel : PageModel
 {
-    public int Age { get; set; }
 
-    public string? Name { get; set; }
+    public string? Answer { get; set; }
 
-    public string? WackyName { get; set; }
-
+    public string? CorrectAnswer { get; set; }
     NameGenerator newName = new Services.NameGenerator();
 
 
     public void OnGet()
     {
-        Name = newName.GenerateName();
-        WackyName = newName.WackyNameGenerator();
+
     }
 
     public IActionResult OnPost()
     {
+
+        // another way presented by ChatGTP
         if (Request.Form["answer"].ToString() == Request.Form["correctAnswer"].ToString())
         {
-            return RedirectToPage("Quiz");
+            ViewData["Result"] = "Correct";
+
+        }
+        else
+        {
+            ViewData["Result"] = "Incorrect";
         }
 
         return Page();
+
     }
 
 }
